@@ -2,10 +2,9 @@ import logging
 from typing import Any, Dict, List
 
 from fastapi import FastAPI
+from langchain_core.messages import HumanMessage
 from pydantic import BaseModel
-
 from src.agent.graph import agent_executor
-from langchain_core.messages import HumanMessage, AIMessage
 
 app = FastAPI()
 
